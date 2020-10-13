@@ -135,18 +135,18 @@ If you are all set, just connect it to the target network by plugging in the Eth
 <h3>available commands:</h3>
 
 ```
-/scan - Scan LAN network
-/scanip [TARGET-IP] - Scan a specific IP address.
-/kill [TARGET-IP] - Stop the target's network connection.
-/mitm [TARGET-IP] - Capture HTTP/DNS traffic from target.
-/replaceimg [TARGET-IP] - Replace HTTP images requested by target.
-/injectjs [TARGET-IP] [JS-FILE-URL] - Inject JavaScript into HTTP pages requested by target.
-/spoofdns [TARGET-IP] [DOMAIN] [FAKE-IP] - Spoof DNS records for target.
-/attacks - View currently running attacks.
-/stop [ATTACK-ID] - Stop a currently running attack.
-/restart - Restart lanGhost.
-/reversesh [TARGET-IP] [PORT] - Create a netcat reverse shell to target.
-/help - Display the help menu.
+/ scan - сканировать локальную сеть
+/ scanip [TARGET-IP] - сканировать определенный IP-адрес.
+/ kill [TARGET-IP] - Остановить сетевое соединение цели.
+/ mitm [TARGET-IP] - Захват HTTP / DNS-трафика от цели.
+/ replaceimg [TARGET-IP] - Заменить HTTP-образы, запрошенные целью.
+/ injectjs [TARGET-IP] [JS-FILE-URL] -Внедрить JavaScript в HTTP-страницы, запрошенные целью.
+/ spoofdns [TARGET-IP] [DOMAIN] [FAKE-IP] - Подмена DNS-записей для цели.
+/ attack - Просмотр текущих атак.
+/ stop [ATTACK-ID] - Остановить текущую атаку.
+/ restart - перезапустить lanGhost.
+/ reversesh [TARGET-IP] [PORT] - Создать обратную оболочку netcat для цели.
+/ help - Показать меню справки.
 /ping - Pong.
 ```
 
