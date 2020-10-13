@@ -1,35 +1,33 @@
-# Этот скрипт не до конца переведён
-# Будет переведён втечение 2020~2021 Года
 <p align=center>
-<a href="https://github.com/Durka22/lanGhost-termux/blob/master/README.MD"><img src="https://github.com/Durka22/lanGhost-termux/raw/master/img/lanGhost-termux.png"/>
+<a href="https://github.com/xdavidhu/lanGhost/blob/master/README.MD"><img src="https://github.com/xdavidhu/lanGhost/raw/master/img/lanGhost.png"/>
 </a>
-<a href="https://travis-ci.org/Durka22/lanGhost-termux">
-    <img src="https://travis-ci.org/Durka22/lanGhost-termux.svg?branch=master" align=center/>
+<a href="https://travis-ci.org/xdavidhu/lanGhost">
+    <img src="https://travis-ci.org/xdavidhu/lanGhost.svg?branch=master" align=center/>
 </a>
-<a href="https://github.com/Durka22/lanGhost-termux">
+<a href="https://github.com/xdavidhu/lanGhost">
     <img src="https://img.shields.io/badge/python-3.3%2C%203.4%2C%203.5%2C%203.6-brightgreen.svg" align=center/>
 </a>
-<a href="https://github.com/Durka22/lanGhost-termux/blob/master/LICENSE">
+<a href="https://github.com/xdavidhu/lanGhost/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" align=center/>
 </a>
-<a href="https://github.com/Durka22/lanGhost-termux">
-    <img src="https://img.shields.io/github/stars/Durka22/lanGhost-termux.svg" align=center/>
+<a href="https://github.com/xdavidhu/lanGhost">
+    <img src="https://img.shields.io/github/stars/xdavidhu/lanGhost.svg" align=center/>
 </a>
 </p>
 
-<h3 align=center>⚠️ Предупреждение! Этот проект больше не поддерживается и может не работать как исключение..</h3>
+<h3 align=center>⚠️ Warning! This project is no longer maintained and may not work as excepted.</h3>
 
-<h3 align=center><i>Чат-бот Dropbox в локальной сети, управляемый через Telegram</i></h3>
+<h3 align=center><i>A LAN dropbox chatbot controllable via Telegram</i></h3>
 
 <h1 align=center>features:</h1>
 <p align=center>
-<a href="https://github.com/Durka22/lanGhost-termux/blob/master/README.MD"><img src="https://raw.githubusercontent.com/Durka22/lanGhost-termux/master/img/features.png"/></a>
+<a href="https://github.com/xdavidhu/lanGhost/blob/master/README.MD"><img src="https://raw.githubusercontent.com/xdavidhu/lanGhost/master/img/features.png"/></a>
 </p>
 
 <br><br>
 
 <p align=center>
-<a href="https://github.com/Durka22/lanGhost-termux/blob/master/DEMOS.MD"><img src="img/demos-button.png" align=center width=40%/></a>
+<a href="https://github.com/xdavidhu/lanGhost/blob/master/DEMOS.MD"><img src="img/demos-button.png" align=center width=40%/></a>
 <br><br><br>
 </p>
 
@@ -37,7 +35,7 @@
 
 <h3 align=center>warning:</h3>
 
-<p align=center>lanGhost-termux is designed for <b>Raspberry Pis</b> (<b>Raspbian</b>/<b>Kali for RPi</b>). Running it on other/desktop distros could cause issues and may not work as excepted.</p>
+<p align=center>lanGhost is designed for <b>Raspberry Pis</b> (<b>Raspbian</b>/<b>Kali for RPi</b>). Running it on other/desktop distros could cause issues and may not work as excepted.</p>
 
 You will need a **Raspberry Pi** with **fresh Raspbian/Kali** on the SD card, because you don't want anything else running in the background.
 
@@ -45,9 +43,9 @@ Boot up the Pi, get an SSH sell or connect a monitor and a keyboard and enter th
 
 ```
 $ sudo apt update && sudo apt install python3 python3-pip
-$ git clone https://github.com/Durka22/lanGhost-termux-termux.git
-$ cd lanGhost-termux
-$ bash setup.py
+$ git clone https://github.com/xdavidhu/lanGhost
+$ cd lanGhost
+$ sudo ./setup.py
 ```
 
 Please **read** the questions/messages while running the setup script!
@@ -73,7 +71,7 @@ This can be anything you want.
 Lastly, @BotFather will ask you for a username for your bot. You have
 to choose a unique username here which ends with 'bot'. For
 example: xdavidbot. Make note of this username, since later
-you will have to search for this to find your bot, which lanGhost-termux
+you will have to search for this to find your bot, which lanGhost
 will be running on.
 
 After you send your username of choise to @BotFather, you will recieve
@@ -81,15 +79,15 @@ your API key.
 ```
 
 <p align=center>
-<img src="https://github.com/Durka22/lanGhost-termux/raw/master/img/screenshot-telegram-1.png"/>
+<img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-1.png"/>
 <br><br>
-<img src="https://github.com/Durka22/lanGhost-termux/raw/master/img/screenshot-telegram-2.png"/>
+<img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-2.png"/>
 </p>
 
 <h4>step 3/4 - setup.py</h4>
 
 ```
-[+] Now for lanGhost-termux to only allow access to you, you need to verify yourself.
+[+] Now for lanGhost to only allow access to you, you need to verify yourself.
 
 Send the verification code below TO THE BOT you just created. Just search for your
 bot's @username (what you sent to @BotFather) to find it.
@@ -98,57 +96,58 @@ bot's @username (what you sent to @BotFather) to find it.
 ```
 
 <p align=center>
-<img src="https://github.com/Durka22/lanGhost-termux/raw/master/img/screenshot-telegram-3.png"/>
+<img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-3.png"/>
 </p>
 
 <h4>step 4/4 - setup.py</h4>
 
 ```
-[+] Do you want lanGhost-termux to start on boot? This option is necessary if you are using
+[+] Do you want lanGhost to start on boot? This option is necessary if you are using
 this device as a dropbox, because when you are going to drop this device into a
-network, you will not have the chanse to start lanGhost-termux remotely! (autostart works
+network, you will not have the chanse to start lanGhost remotely! (autostart works
 by adding a new cron '@reboot' entry)
 ```
 
-<h3 align=center>If you are ready with the setup just reboot the Pi and lanGhost-termux will start right up!</3>
+<h3 align=center>If you are ready with the setup just reboot the Pi and lanGhost will start right up!</3>
 <br><br>
 <p align=center>
-<img src="https://github.com/Durka22/lanGhost-termux/raw/master/img/screenshot-telegram-4.png"/>
+<img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-4.png"/>
 </p>
 
 <h1 align=center>usage:</h1>
 
 <h3 align=center>warnings:</h3>
 
-<p align=center>Using lanGhost-termux on a networks bigger than /24 is <b>not recommended</b> because the scans will take too long.</p>
+<p align=center>Using lanGhost on a networks bigger than /24 is <b>not recommended</b> because the scans will take too long.</p>
 
-<p align=center>lanGhost-termux is <b>not quiet</b>. Anyone monitoring the traffic can see the ARP packets!</p>
+<p align=center>lanGhost is <b>not quiet</b>. Anyone monitoring the traffic can see the ARP packets!</p>
 
 <h3>drop it into a network:</h3>
 
-If you have selected `yes` at `step 4/4 (autostart)` the Pi is fully set up for dropping. lanGhost-termux should start up on boot, and send you a message on Telegram with the text: `lanGhost-termux started! 👻`.
+If you have selected `yes` at `step 4/4 (autostart)` the Pi is fully set up for dropping. lanGhost should start up on boot, and send you a message on Telegram with the text: `lanGhost started! 👻`.
 
-Make sure to try it out in your lab first and test if lanGhost-termux is responding to your messages!
+Make sure to try it out in your lab first and test if lanGhost is responding to your messages!
 
 If you are all set, just connect it to the target network by plugging in the Ethernet cable into the Pi and connecting the power via micro USB and you are ready to go!
 
-(lanGhost-termux can also work over WiFi, but you will need to set up `wpa_supplicant` to connect to the network automatically first)
+(lanGhost can also work over WiFi, but you will need to set up `wpa_supplicant` to connect to the network automatically first)
 
 <h3>available commands:</h3>
 
 ```
-/ scan - сканировать локальную сеть
-/ scanip [TARGET-IP] - сканировать определенный IP-адрес.
-/ kill [TARGET-IP] - Остановить сетевое соединение цели.
-/ mitm [TARGET-IP] - Захват HTTP / DNS-трафика от цели.
-/ replaceimg [TARGET-IP] - Заменить HTTP-образы, запрошенные целью.
-/ injectjs [TARGET-IP] [JS-FILE-URL] - внедрять JavaScript в HTTP-страницы, запрошенные целью
-/ spoofdns [TARGET-IP] [DOMAIN] [FAKE-IP] - Подмена DNS-записей для цели.
-/ attack - Просмотр текущих атак.
-/ stop [ATTACK-ID] - Остановить текущую атаку.
-/ restart - перезапустить lanGhost-termux.
-/ reversesh [TARGET-IP] [PORT] - Создать обратную оболочку netcat для цели.
-/ help - Показать меню справки.
+/scan - Scan LAN network
+/scanip [TARGET-IP] - Scan a specific IP address.
+/kill [TARGET-IP] - Stop the target's network connection.
+/mitm [TARGET-IP] - Capture HTTP/DNS traffic from target.
+/replaceimg [TARGET-IP] - Replace HTTP images requested by target.
+/injectjs [TARGET-IP] [JS-FILE-URL] - Inject JavaScript into HTTP pages requested by target.
+/spoofdns [TARGET-IP] [DOMAIN] [FAKE-IP] - Spoof DNS records for target.
+/attacks - View currently running attacks.
+/stop [ATTACK-ID] - Stop a currently running attack.
+/restart - Restart lanGhost.
+/reversesh [TARGET-IP] [PORT] - Create a netcat reverse shell to target.
+/help - Display the help menu.
+/ping - Pong.
 ```
 
 <h3>attack system:</h3>
@@ -208,5 +207,5 @@ You will get a message every time when a new device connects/leaves the network.
 
 <p align=center>
 Copyright (c) 2018 by David Schütz. Some rights reserved.<br><br>
-lanGhost-termux is under the terms of the MIT License, following all clarifications stated in the license file. You can also go ahead and email me at xdavid{at}protonmail{dot}com.
+lanGhost is under the terms of the MIT License, following all clarifications stated in the license file. You can also go ahead and email me at xdavid{at}protonmail{dot}com.
 </p>
