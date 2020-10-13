@@ -49,7 +49,7 @@ $ bash setup.py
 ```
 
 Пожалуйста, ** прочтите ** вопросы / сообщения при запуске сценария установки!
-<h4>step 1/4 - setup.py</h4>
+<h4>шаг 1/4 - setup.py</h4>
 
 ```
 [+] Введите имя подключенного сетевого интерфейса / будет
@@ -83,7 +83,7 @@ $ bash setup.py
 <img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-2.png"/>
 </p>
 
-<h4>step 3/4 - setup.py</h4>
+<h4>шаг 3/4 - setup.py</h4>
 
 ```
 [+] Теперь, чтобы lanGhost разрешал доступ только вам, вам нужно подтвердить себя.
@@ -98,7 +98,7 @@ $ bash setup.py
 <img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-3.png"/>
 </p>
 
-<h4>step 4/4 - setup.py</h4>
+<h4>шаг 4/4 - setup.py</h4>
 
 ```
 [+] Вы хотите, чтобы lanGhost запускался при загрузке? Эта опция необходима, если вы используете
@@ -113,25 +113,25 @@ $ bash setup.py
 <img src="https://github.com/xdavidhu/lanGhost/raw/master/img/screenshot-telegram-4.png"/>
 </p>
 
-<h1 align=center>usage:</h1>
+<h1 align=center>Применение:</h1>
 
-<h3 align=center>warnings:</h3>
+<h3 align=center>предупреждения:</h3>
 
-<p align=center>Using lanGhost on a networks bigger than /24 is <b>not recommended</b> because the scans will take too long.</p>
+<p align=center>Использование lanGhost в сетях больше / 24 <b> не рекомендуется </b>, так как сканирование займет слишком много времени..</p>
 
-<p align=center>lanGhost is <b>not quiet</b>. Anyone monitoring the traffic can see the ARP packets!</p>
+<p align=center>lanGhost <b> не тихий </b>. Любой, кто отслеживает трафик, может видеть пакеты ARP.!</p>
 
-<h3>drop it into a network:</h3>
+<h3>брось это в сеть:</h3>
 
-If you have selected `yes` at `step 4/4 (autostart)` the Pi is fully set up for dropping. lanGhost should start up on boot, and send you a message on Telegram with the text: `lanGhost started! 👻`.
+Если вы выбрали «да» на «шаге 4/4 (автозапуск)», Pi полностью настроен для сброса. lanGhost должен запуститься при загрузке и отправить вам сообщение в Telegram с текстом: `lanGhost start! 👻`.
 
-Make sure to try it out in your lab first and test if lanGhost is responding to your messages!
+Обязательно сначала опробуйте его в своей лаборатории и проверьте, отвечает ли lanGhost на ваши сообщения!
 
-If you are all set, just connect it to the target network by plugging in the Ethernet cable into the Pi and connecting the power via micro USB and you are ready to go!
+Если у вас все настроено, просто подключите его к целевой сети, подключив кабель Ethernet к Pi и подключив питание через микро-USB, и вы готовы к работе!
 
-(lanGhost can also work over WiFi, but you will need to set up `wpa_supplicant` to connect to the network automatically first)
+(lanGhost также может работать через Wi-Fi, но сначала вам нужно настроить wpa_supplicant для автоматического подключения к сети)
 
-<h3>available commands:</h3>
+<h3>доступные команды:</h3>
 
 ```
 / scan - сканировать локальную сеть
@@ -149,31 +149,30 @@ If you are all set, just connect it to the target network by plugging in the Eth
 /ping - Pong.
 ```
 
-<h3>attack system:</h3>
+<h3>система атаки:</h3>
 
-You can start an attack by using one of these commands: `/kill, /mitm, /replaceimg, /injectjs, /spoofdns`
+Вы можете начать атаку с помощью одной из этих команд: `/ kill, / mitm, / replaceimg, / injectjs, / spoofdns`
+Взаимодействие с другими людьми
+Если у вас запущена одна или несколько атак, вы можете использовать команду `/ attack`, чтобы получить их список, содержащий идентификаторы ATTACK-ID.
+Взаимодействие с другими людьми
+Чтобы остановить атаку, введите `/ stop [ATTACK-ID]`.
 
-Ater you have one or more attacks running, you can use the `/attack` command to get a list of them containing the `ATTACK-ID`'s.
+<h3>обратная оболочка:</h3>
 
-To stop an attack type `/stop [ATTACK-ID]`.
+<h3 align=center>предупреждение:</h3>
 
-<h3>reverse shell:</h3>
-
-<h3 align=center>warning:</h3>
-
-<p align=center><code>/reversesh</code> only makes a netcat TCP connection which is not encrypted and all the traffic can be monitored! Only use it for emergency fixes or for setting up an encrypted reverse connection if necessary.</p>
-
-The `/reversesh` command is for getting a reverse shell on the Pi, when its not accessable from the outside.
-
-To use the `/reversesh` command you will need to have a server listening for the shell.
-
-Netcat command to start up the listener on your server:
+<p align=center><code>/reversesh</code> устанавливает только TCP-соединение netcat, которое не зашифровано, и весь трафик можно контролировать! Используйте его только для аварийных исправлений или для настройки зашифрованного обратного соединения при необходимости.</p>
+Команда `/ reversesh` предназначена для получения обратной оболочки на Pi, когда она недоступна извне.
+Взаимодействие с другими людьми
+Чтобы использовать команду `/ reversesh`, вам нужно, чтобы сервер слушал оболочку.
+Взаимодействие с другими людьми
+Команда Netcat для запуска слушателя на вашем сервер
 
 ```
 $ nc -l 0.0.0.0 [PORT]
 ```
 
-Telegram command:
+Команда Telegram:
 
 ```
 /reversesh [IP-of-your-listening-server] [PORT]
@@ -195,17 +194,17 @@ Telegram command:
  * `/ scan` - Сканирует локальную сеть и возвращает хосты в оперативный режим. Использует nmap -sn scan для обнаружения хостов.
  * `/ scanip` - Сканирует IP-адрес на предмет открытых портов и другой информации. Использует сканирование nmap -sS.
 
-<h3>notifications:</h3>
+<h3>уведомления:</h3>
 
-You will get a message every time when a new device connects/leaves the network.
+Вы будете получать сообщение каждый раз, когда новое устройство подключается / покидает сеть.
 
-<h1 align=center>disclaimer:</h1>
+<h1 align=center>отказ от ответственности:</h1>
 
-<h3 align=center>I'm not responsible for anything you do with this program, so please only use it for good and educational purposes.</h3>
+<h3 align=center>Я не несу ответственности ни за что, что вы делаете с этой программой, поэтому, пожалуйста, используйте ее только в хороших и образовательных целях.</h3>
 
-<h1 align=center>legal:</h1>
+<h1 align=center>законный:</h1>
 
 <p align=center>
-Copyright (c) 2018 by David Schütz. Some rights reserved.<br><br>
-lanGhost is under the terms of the MIT License, following all clarifications stated in the license file. You can also go ahead and email me at xdavid{at}protonmail{dot}com.
+Авторские права (c) 2018 Дэвид Шютц. Некоторые права защищены. <br> <br>
+lanGhost находится в соответствии с условиями лицензии MIT с учетом всех пояснений, содержащихся в файле лицензии. Вы также можете написать мне по адресу xdavid {at} protonmail {dot} com.
 </p>
