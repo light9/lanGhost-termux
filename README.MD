@@ -17,7 +17,7 @@
 
 <h3 align=center>⚠️ Предупреждение! Этот проект больше не поддерживается и может не работать как исключение.</h3>
 
-<h3 align=center><i>A LAN dropbox chatbot controllable via Telegram</i></h3>
+<h3 align=center><i>Чат-бот Dropbox в локальной сети, управляемый через Telegram</i></h3>
 
 <h1 align=center>features:</h1>
 <p align=center>
